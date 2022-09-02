@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Horario en zona LATAM</title>
+  </head>
+  <body>
+    <wc-toast></wc-toast>
+    <main class="container">
+        <h1>Zonas Horarias</h1>
+      <form action="">
+        <label>
+          Obten los horarios de los paises latam <br>
+          Selecciona una fecha y una hora:
+          <input name="date" type="datetime-local">
+        </label>
+        <button class="toast">
+          Convertir fecha y hora
+        </button>
+      </form>
+      <textarea readonly placeholder="Aqui tendras el resultado"></textarea>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
